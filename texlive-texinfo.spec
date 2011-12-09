@@ -1,4 +1,4 @@
-# revision 24108
+# revision 24782
 # category Package
 # catalog-ctan /macros/texinfo/texinfo
 # catalog-date 2008-04-21 10:16:51 +0200
@@ -6,7 +6,7 @@
 # catalog-version 2008-04-18.10
 Name:		texlive-texinfo
 Version:	20080418.10
-Release:	2
+Release:	3
 Summary:	Texinfo documentation system
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/texinfo/texinfo
@@ -20,7 +20,6 @@ Requires(pre):	texlive-kpathsea.bin
 Requires(preun):texlive-kpathsea.bin
 Requires(post):	texlive-kpathsea.bin
 Requires(postun):texlive-kpathsea.bin
-Conflicts:	texlive-texmf < 20110705-4
 
 %description
 Info is the preferred format for documentation in the GNU
@@ -33,19 +32,19 @@ the latest working version of the Texinfo macros may be found
 in the Texinfo 'latest' package.
 
 %pre
-    %_texmf_mktexlsr_pre
+    %{_sbindir}/texlive.post
 
 %post
-    %_texmf_mktexlsr_post
+    %{_sbindir}/texlive.post
 
 %preun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_pre
+	%{_sbindir}/texlive.post
     fi
 
 %postun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_post
+	%{_sbindir}/texlive.post
     fi
 
 #-----------------------------------------------------------------------
