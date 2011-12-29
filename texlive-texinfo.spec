@@ -31,16 +31,8 @@ linkages in some cases). Note that a developers' snapshot of
 the latest working version of the Texinfo macros may be found
 in the Texinfo 'latest' package.
 
-%pre
-    %{_sbindir}/texlive.post
-
 %post
     %{_sbindir}/texlive.post
-
-%preun
-    if [ $1 -eq 0 ]; then
-	%{_sbindir}/texlive.post
-    fi
 
 %postun
     if [ $1 -eq 0 ]; then
@@ -66,7 +58,6 @@ in the Texinfo 'latest' package.
 %{_texmfdistdir}/tex/texinfo/txi-sr.tex
 %{_texmfdistdir}/tex/texinfo/txi-tr.tex
 %{_texmfdistdir}/tex/texinfo/txi-uk.tex
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -77,5 +68,3 @@ in the Texinfo 'latest' package.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
