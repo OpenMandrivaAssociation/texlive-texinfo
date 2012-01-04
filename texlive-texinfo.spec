@@ -6,7 +6,7 @@
 # catalog-version 2008-04-18.10
 Name:		texlive-texinfo
 Version:	20080418.10
-Release:	3
+Release:	4
 Summary:	Texinfo documentation system
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/texinfo/texinfo
