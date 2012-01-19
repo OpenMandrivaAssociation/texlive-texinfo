@@ -1,4 +1,4 @@
-# revision 24782
+# revision 25086
 # category Package
 # catalog-ctan /macros/texinfo/texinfo
 # catalog-date 2008-04-21 10:16:51 +0200
@@ -6,7 +6,7 @@
 # catalog-version 2008-04-18.10
 Name:		texlive-texinfo
 Version:	20080418.10
-Release:	4
+Release:	5
 Summary:	Texinfo documentation system
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/texinfo/texinfo
@@ -16,10 +16,6 @@ BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
-Requires(pre):	texlive-kpathsea.bin
-Requires(preun):texlive-kpathsea.bin
-Requires(post):	texlive-kpathsea.bin
-Requires(postun):texlive-kpathsea.bin
 
 %description
 Info is the preferred format for documentation in the GNU
