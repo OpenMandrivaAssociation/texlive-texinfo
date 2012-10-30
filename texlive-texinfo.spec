@@ -1,4 +1,4 @@
-# revision 27289
+# revision 27672
 # category Package
 # catalog-ctan /macros/texinfo/texinfo
 # catalog-date 2012-07-07 16:36:49 +0200
@@ -6,7 +6,7 @@
 # catalog-version 2012-06-05.14
 Name:		texlive-texinfo
 Version:	20120605.14
-Release:	1
+Release:	2
 Summary:	Texinfo documentation system
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/texinfo/texinfo
