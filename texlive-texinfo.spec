@@ -1,4 +1,4 @@
-# revision 27672
+# revision 27289
 # category Package
 # catalog-ctan /macros/texinfo/texinfo
 # catalog-date 2012-07-07 16:36:49 +0200
@@ -6,7 +6,7 @@
 # catalog-version 2012-06-05.14
 Name:		texlive-texinfo
 Version:	20120605.14
-Release:	2
+Release:	1
 Summary:	Texinfo documentation system
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/texinfo/texinfo
@@ -64,3 +64,45 @@ in the Texinfo 'latest' package.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Wed Aug 08 2012 Paulo Andrade <pcpa@mandriva.com.br> 20120605.14-1
++ Revision: 812897
+- Update to latest release.
+
+* Mon Jun 11 2012 Paulo Andrade <pcpa@mandriva.com.br> 20080418.10-8
++ Revision: 805105
+- Update to latest release.
+
+* Fri Apr 13 2012 Paulo Andrade <pcpa@mandriva.com.br> 20080418.10-7
++ Revision: 790743
+- Update to latest release.
+
+* Wed Feb 08 2012 Paulo Andrade <pcpa@mandriva.com.br> 20080418.10-6
++ Revision: 772174
+- Update to latest release.
+
+* Thu Jan 19 2012 Paulo Andrade <pcpa@mandriva.com.br> 20080418.10-5
++ Revision: 762736
+- Update to latest upstream package
+
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20080418.10-4
++ Revision: 756626
+- Rebuild to reduce used resources
+
+* Fri Dec 09 2011 Paulo Andrade <pcpa@mandriva.com.br> 20080418.10-3
++ Revision: 739922
+- texlive-texinfo
+
+* Mon Dec 05 2011 Zé <ze@mandriva.org> 20080418.10-2
++ Revision: 737795
+- add missing scriplets requires
+- rpm isnt able to handle = in conflicts
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20080418.10-1
++ Revision: 719689
+- texlive-texinfo
+- texlive-texinfo
+- texlive-texinfo
+
