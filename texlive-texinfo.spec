@@ -7,7 +7,7 @@
 Name:		texlive-texinfo
 Epoch:		1
 Version:	5.1
-Release:	11
+Release:	12
 Summary:	Texinfo documentation system
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/texinfo/texinfo
