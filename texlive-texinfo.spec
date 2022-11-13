@@ -1,18 +1,12 @@
-# revision 34228
-# category Package
-# catalog-ctan /macros/texinfo/texinfo
-# catalog-date 2014-02-26 23:03:13 +0100
-# catalog-license gpl
-# catalog-version 5.1
 Name:		texlive-texinfo
 Epoch:		1
-Version:	5.1
-Release:	13
+Version:	64969
+Release:	1
 Summary:	Texinfo documentation system
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/texinfo/texinfo
 License:	GPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/texinfo.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/texinfo.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -29,12 +23,12 @@ the latest release of the Texinfo macros may be found in the
 Texinfo 'latest' package.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -58,7 +52,7 @@ Texinfo 'latest' package.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0
+%autosetup -p1 -c
 
 %build
 
