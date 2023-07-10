@@ -1,6 +1,6 @@
 Name:		texlive-texinfo
 Epoch:		1
-Version:	67325
+Version:	67533
 Release:	1
 Summary:	Texinfo documentation system
 Group:		Publishing
