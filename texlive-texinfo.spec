@@ -4,7 +4,7 @@ Version:	69818
 Release:	1
 Summary:	Texinfo documentation system
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/texinfo/texinfo
+URL:		https://www.ctan.org/tex-archive/macros/texinfo/texinfo
 License:	GPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/texinfo.r%{version}.tar.xz
 BuildArch:	noarch
